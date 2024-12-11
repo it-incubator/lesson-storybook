@@ -1,0 +1,24 @@
+.button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: var(--light-100);
+  font-family: inherit;
+  padding: 5px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.primary {
+  background-color: var(--accent-500);
+}
+
+.secondary {
+  background-color: var(--dark-300);
+}
+
+.outlined {
+  color: var(--accent-500);
+  border: 1px solid var(--accent-500);
+  background-color: transparent;
+}
