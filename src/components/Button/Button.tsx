@@ -3,7 +3,7 @@ import clsx from "clsx"
 import { ComponentPropsWithoutRef } from "react"
 import s from "./Button.module.css"
 
-type Props = {
+export type Props = {
   /** Choose from 3 style variants. Default: 'primary'. */
   variant?: "primary" | "secondary" | "outlined"
   /** Render the Button using any element if asChild true */
