@@ -6,7 +6,7 @@ import s from "./ModalRadix.module.css"
 
 type ModalSize = "lg" | "md" | "sm"
 
-type Props = {
+export type ModalRadixProps = {
   /** The controlled open state of the Modal */
   open: boolean
   /** Close modal handler */
@@ -23,7 +23,15 @@ type Props = {
 } & ComponentPropsWithoutRef<"div">
 
 /** Ui kit ModalRadix component */
-export const ModalRadix = ({ modalTitle, className, onClose, open, children, size = "md", ...rest }: Props) => {
+export const ModalRadix = ({
+  modalTitle,
+  className,
+  onClose,
+  open,
+  children,
+  size = "md",
+  ...rest
+}: ModalRadixProps) => {
   return (
     <Dialog.Root open={open} onOpenChange={onClose} {...rest}>
       <Dialog.Portal>
